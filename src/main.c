@@ -171,7 +171,7 @@ int clash_echo(char **args) {
 
 int clash_cd(char **args) {
     if (args[1] == NULL) {
-        fprintf(stderr, "clash: argument error");
+        fprintf(stderr, "clash: argument error\n");
     } else {
         if (chdir(args[1]) != 0) {
             perror("clash");
