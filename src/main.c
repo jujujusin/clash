@@ -161,7 +161,7 @@ void clash_loop(void) {
 
 int clash_echo(char **args) {
     if (args[1] == NULL) {
-        fprintf(stderr, "clash: argument error");
+        fprintf(stderr, "clash: argument error\n");
     } else {
         fprintf(stdout, "%s\n", args[1]);
     }
